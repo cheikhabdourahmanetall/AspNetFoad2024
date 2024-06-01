@@ -15,11 +15,16 @@ namespace MvcFoad2024.Models
 
         public DbSet<Memoire> memoire { get; set; }
         public DbSet<Utilisateur> utilisateur { get; set; }
-        public DbSet<Role> role { get; set; }
         public DbSet<Consultation> consultation { get; set; }
         public DbSet<Commentaire> commentaire { get; set; }
         public DbSet<Document> document { get; set; }
         public DbSet<Auteur> auteur { get; set; }
+        public DbSet<Bibliothecaire> bibliothecaire { get; set; }
 
     }
 }
+
+
+
+
+

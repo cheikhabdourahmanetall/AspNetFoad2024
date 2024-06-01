@@ -25,21 +25,18 @@ namespace MvcFoad2024.Models
         public string Email { get; set; }
         [Display(Name = "MotDePasse"), Required(ErrorMessage = "*"), MaxLength(100, ErrorMessage = "la taille maximale est de 150 caract")]
         public string MotDePassee { get; set; }
-        [Display(Name = "Role"), Required(ErrorMessage = "*"), MaxLength(100, ErrorMessage = "la taille maximale est de 2000 caracteres")]
-        public string Role { get; set; }
+        
         [Display(Name = "Matricule"), Required(ErrorMessage = "*"), MaxLength(100, ErrorMessage = "la taille maximale est de 2000 caracteres")]
         public string Matricule { get; set; }
         [Display(Name = "Etat"), Required(ErrorMessage = "*"), MaxLength(100, ErrorMessage = "la taille maximale est de 2000 caracteres")]
         public string Etat { get; set; }
 
-        [ForeignKey("Role")]
-        public int RoleId { get; set; }
        
 
-        public ICollection<Auteur> Auteurs { get; set; }
-        public ICollection<Commentaire> Commentaires { get; set; }
-        public ICollection<Consultation> Consultations { get; set; }
-        public ICollection<Memoire> Memoires { get; set; }
+      
+        public virtual ICollection<Bibliothecaire> Bibliothecaire { get; set; }
+      
+     
 
 
     }

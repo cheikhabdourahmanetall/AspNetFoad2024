@@ -35,7 +35,10 @@ namespace MvcFoad2024.Models
         [Display(Name = "Verdict"), Required(ErrorMessage = "*"), MaxLength(100, ErrorMessage = "Trop long")]
         
         public string verdict { get; set; }
+
+        [ForeignKey("Document")]
         public int DocumentId { get; set; }
+
         public Document Document { get; set; }
 
         public int UtilisateurId { get; set; }

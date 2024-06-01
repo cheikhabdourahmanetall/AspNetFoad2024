@@ -6,12 +6,14 @@ using System.Web;
 
 namespace MvcFoad2024.Models
 {
-    public class Auteur:Utilisateur
+    public class Bibliothecaire:Utilisateur
     {
-        public String Specialite { get; set; }
-        public virtual ICollection<Memoire> Memoire { get; set; }
-     
 
+        public string type { get; set; }
+        public ICollection<Memoire> Memoires { get; set; }
         
+       
+
+       
     }
 }

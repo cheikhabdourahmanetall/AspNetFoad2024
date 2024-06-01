@@ -16,7 +16,8 @@ namespace MvcFoad2024.Models
             public string Extension { get; set; }
             public byte[] Contenu { get; set; }
 
-            public ICollection<Memoire> Memoires { get; set; }
+        
+        public ICollection<Memoire> Memoire { get; set; }
 
         }
     }
